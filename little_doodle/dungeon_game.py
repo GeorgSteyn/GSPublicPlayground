@@ -3,6 +3,7 @@ CELLS = [(0, 0), (0, 1), (0, 2),
          (1, 0), (1, 1), (1, 2),
          (2, 0), (2, 1), (2, 2)]
 
+
 def get_locations():
     monster = random.choice(CELLS)
     door = random.choice(CELLS)
@@ -12,6 +13,7 @@ def get_locations():
         return get_locations()
 
     return monster, door, start
+
 
 def move_player(player, move):
     # player = (x, y)
